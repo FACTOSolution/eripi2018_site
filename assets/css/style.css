@@ -83,12 +83,21 @@
 #apresentacao h2 {
 	margin-bottom: 2vh;
 	text-align: center;
+	font-weight: bold;
 }
 
 #apresentacao .sobre {
 	font-size: 3vh;
 	text-align: justify;
 	margin: 8vh auto;
+}
+
+#apresentacao h3 {
+	font-size: 3vh;
+}
+
+#apresentacao li {
+	font-size: 2vh;
 }
 
 @media (max-width: 768px){
@@ -124,6 +133,17 @@
 	position: relative;
 	top: 1.5vh;
 	height: 0.5vh;
+}
+
+#comissao {
+	color: #222;
+	font-weight: bold;
+	background-color: white;
+	background: linear-gradient(-90deg, #222, white, white);
+	box-shadow: 10px, 10px, 5px, grey;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	margin-right: 40%;
 }
 
 .line {
