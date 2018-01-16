@@ -100,12 +100,6 @@
 	font-size: 2vh;
 }
 
-@media (max-width: 768px){
-	#apresentacao .sobre {
-		text-align: left;
-	}
-}
-
 #apresentacao figure {
 	margin: 8vh auto;
 }
@@ -138,9 +132,7 @@
 #comissao {
 	color: #222;
 	font-weight: bold;
-	background-color: white;
-	background: linear-gradient(-90deg, #222, white, white);
-	box-shadow: 10px, 10px, 5px, grey;
+	background: linear-gradient(-90deg, #222, #eee, #fff);
 	padding-top: 2vh;
 	padding-bottom: 2vh;
 	margin-right: 40%;
@@ -165,4 +157,19 @@
 @keyframes aumentar {
 	from { width: 0%; }
 	to { width: 100%; }
+}
+
+@media (max-width: 768px){
+	#apresentacao .sobre {
+		text-align: left;
+	}
+
+	#comissao {
+		color: #222;
+		font-weight: bold;
+		background: white;
+		padding-top: 2vh;
+		padding-bottom: 2vh;
+		margin-right: 0;
+	}
 }
