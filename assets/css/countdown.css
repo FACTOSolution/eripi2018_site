@@ -1,0 +1,24 @@
+canvas {
+	width: 36%;
+	height: 7%;
+	display: block;
+	position: relative;
+	margin: 8vh 32%;
+}
+
+#contagem {
+	background-color: #222;
+	color: #fff;
+	overflow: hidden;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+@media (max-width: 980px) {
+	canvas {
+		width: 98%;
+		height: 48%;
+		margin: 2vh 1%;
+	}
+}
