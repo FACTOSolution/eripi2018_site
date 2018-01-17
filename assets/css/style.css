@@ -271,6 +271,75 @@
 	font-size: calc(100vh/50);
 }
 
+#inscricoes {
+	width: 100%;
+	padding: 8vh;
+}
+
+#inscricoes h2 {
+	text-align: right;
+	font-size: calc(100vh/18);
+	font-weight: lighter;
+	padding-right: 10px;
+	margin-bottom: 8vh;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	color: #2777B9;
+	border-right: 10px solid #2777B9;
+}
+
+#inscricoes .container {
+	margin: 4vh auto;
+}
+
+#inscricoes .container .col-md-4 {
+	margin-bottom: 4vh;
+}
+
+#inscricoes .container h3 {
+	background-color: #2777B9;
+	color: white;
+	font-weight: bold;
+	font-size: calc(100vh/50);
+	padding: 2vh;
+	margin-bottom: 0;
+}
+
+#inscricoes .container table {
+	margin-bottom: 0;
+}
+
+#inscricoes .container th,td {
+	font-size: calc(100vh/55);
+}
+
+#inscricoes .container a {
+	display: block;
+	color: white;
+	background-color: #2777B9;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: calc(100vh/50);
+	padding: 2vh;
+}
+
+#inscricoes .container a:hover {
+	background-color: #1E629A;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+
+#inscricoes .container p {
+	margin: 4vh auto;
+	text-align: right;
+	font-weight: bold;
+	font-size: calc(100vh/40);
+	color: rgba(253, 128, 1, 0.9);
+}
+
 @media (max-width: 768px){
 	#apresentacao .sobre {
 		text-align: left;
@@ -288,6 +357,12 @@
 	}
 
 	#palestrantes h2 {
+		width: 92%;
+		margin-left: 4%;
+		margin-right: 4%;
+	}
+
+	#inscricoes h2 {
 		width: 92%;
 		margin-left: 4%;
 		margin-right: 4%;
