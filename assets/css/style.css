@@ -132,10 +132,12 @@
 #comissao {
 	color: #222;
 	font-weight: bold;
-	background: linear-gradient(-90deg, #222, #eee, #fff);
+	background: white;
 	padding-top: 2vh;
 	padding-bottom: 2vh;
-	margin-right: 40%;
+	margin-right: 35%;
+	margin-left: 35%;
+	border-radius: 8px 32px;
 }
 
 .line {
@@ -165,11 +167,7 @@
 	}
 
 	#comissao {
-		color: #222;
-		font-weight: bold;
-		background: white;
-		padding-top: 2vh;
-		padding-bottom: 2vh;
-		margin-right: 0;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 }
