@@ -173,3 +173,51 @@
 		margin-right: 10%;
 	}
 }
+
+#programacao {
+	width: 100%;
+	padding: 8vh;
+}
+
+#programacao h2 {
+	font-size: calc(100vh/18);
+	font-weight: lighter;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-bottom: 8vh;
+	margin-left: 20%;
+	margin-right: 20%; 
+	border-bottom: 1px solid rgba(253, 128, 1, 0.9);
+}
+
+#programacao a {
+	padding: 2vh 6vh;
+	color: #000;
+	background-color: #fafafa;
+	margin-left: 0.5vh;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	width: 36vh;
+}
+
+#programacao a:hover {
+	background-color: rgba(253, 128, 1, 0.9);
+	transition: 0.5s;
+}
+
+#programacao li .show {
+	background-color: rgba(253, 128, 1, 0.9);
+}
+
+#programacao .nav-tabs {
+	border-bottom: 1px solid rgba(253, 128, 1, 0.9);
+}
+
+#programacao table {
+	/*margin-top: 2vh;*/
+	border-bottom: 1px solid rgba(253, 128, 1, 0.9);
+	animation: fadein 1 ease-in 1s;
+	-webkit-animation: fadein 1 ease-in 1s;
+	-moz-animation: fadein 1 ease-in 1s;
+}
