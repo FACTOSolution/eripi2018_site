@@ -1,3 +1,13 @@
+@keyframes aumentar {
+	from { width: 0%; }
+	to { width: 100%; }
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
 #head {
 	position: relative;
 	float: left;
@@ -66,11 +76,6 @@
 	-moz-animation: fadein 1 ease-in 1s;
 	display: block;
 	top: 0px;
-}
-
-@keyframes fadein {
-	from { opacity: 0; }
-	to { opacity: 1; }
 }
 
 #apresentacao {
@@ -158,22 +163,6 @@
 	animation-direction: alternate-reverse;
 }
 
-@keyframes aumentar {
-	from { width: 0%; }
-	to { width: 100%; }
-}
-
-@media (max-width: 768px){
-	#apresentacao .sobre {
-		text-align: left;
-	}
-
-	#comissao {
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-}
-
 #programacao {
 	width: 100%;
 	padding: 8vh;
@@ -182,11 +171,12 @@
 #programacao h2 {
 	font-size: calc(100vh/18);
 	font-weight: lighter;
-	text-align: center;
 	padding-bottom: 10px;
 	margin-bottom: 8vh;
+	text-align: center;
+	width: 60%;
 	margin-left: 20%;
-	margin-right: 20%; 
+	margin-right: 20%;
 	border-bottom: 1px solid rgba(253, 128, 1, 0.9);
 }
 
@@ -215,9 +205,25 @@
 }
 
 #programacao table {
-	/*margin-top: 2vh;*/
 	border-bottom: 1px solid rgba(253, 128, 1, 0.9);
 	animation: fadein 1 ease-in 1s;
 	-webkit-animation: fadein 1 ease-in 1s;
 	-moz-animation: fadein 1 ease-in 1s;
+}
+
+@media (max-width: 768px){
+	#apresentacao .sobre {
+		text-align: left;
+	}
+
+	#comissao {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#programacao h2 {
+		width: 92%;
+		margin-left: 4%;
+		margin-right: 4%;
+	}
 }
