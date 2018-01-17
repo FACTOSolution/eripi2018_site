@@ -87,17 +87,19 @@
 }
 
 #apresentacao .sobre {
-	font-size: 3vh;
+	font-size: calc(100vh/40);
 	text-align: justify;
 	margin: 8vh auto;
 }
 
 #apresentacao h3 {
-	font-size: 3vh;
+	font-size: calc(100vh/30);
+	font-weight: bold;
+	color: rgba(253, 128, 1, 0.9);
 }
 
 #apresentacao li {
-	font-size: 2vh;
+	font-size: calc(100vh/40);
 }
 
 #apresentacao figure {
