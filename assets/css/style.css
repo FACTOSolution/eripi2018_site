@@ -276,7 +276,7 @@
 	padding: 8vh;
 }
 
-#inscricoes h2 {
+#inscricoes > h2 {
 	text-align: right;
 	font-size: calc(100vh/18);
 	font-weight: lighter;
@@ -340,6 +340,91 @@
 	color: rgba(253, 128, 1, 0.9);
 }
 
+.sub-trabalhos {
+	width: 100%;
+	padding: 4vh;
+}
+
+.sub-trabalhos h2 {
+	text-align: center;
+	font-size: calc(100vh/18);
+	padding-left: 2vh;
+	border-left: 10px solid #2777B9;
+	margin-bottom: 8vh;
+	margin-left: 30%;
+	margin-right: 30%;
+	width: 40%;
+	color: #2777B9;
+}
+
+.sub-trabalhos div.col-md-4, div.col-md-8 {
+	padding: 0 0;
+}
+
+.sub-trabalhos .nav-tabs {
+	background-color: rgba(253, 128, 1, 0.9);
+	border-top: 1px solid #dee2e6;
+	border-bottom: 1px solid #dee2e6;
+	border-left: 1px solid #dee2e6;
+}
+
+.sub-trabalhos .nav-tabs .nav-link {
+	padding: 2vh 4vh;
+	border-left: none;
+	border-right: none;
+	border-radius: 0;
+	text-decoration: none;
+	color: #222;
+	font-size: calc(100vh/45);
+	text-transform: uppercase;
+}
+
+.sub-trabalhos .nav-tabs .nav-link:hover {
+	background-color: #f2f2f2;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+}
+
+.sub-trabalhos .nav-tabs .nav-link.active {
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.sub-trabalhos .tab-content {
+	display: block;
+	background-color: #f2f2f2;
+	padding: 4vh;
+	border-top: 1px solid #dee2e6;
+	border-bottom: 1px solid #dee2e6;
+	border-right: 1px solid #dee2e6;
+	border-left: 1px solid #dee2e6;
+}
+
+.sub-trabalhos .tab-content h3 {
+	text-align: center;
+	font-weight: lighter;
+	font-size: calc(100vh/25);
+	color: #222;
+	margin-bottom: 4vh;
+}
+
+.sub-trabalhos .tab-content p {
+	text-align: justify;
+	font-size: calc(100vh/45);
+	color: #222;
+}
+
+.sub-trabalhos .tab-content li {
+	text-align: justify;
+	font-size: calc(100vh/45);
+	color: #222;
+}
+
+.sub-trabalhos .tab-content ul {
+	list-style-type: square;
+}
+
 @media (max-width: 768px){
 	#apresentacao .sobre {
 		text-align: left;
@@ -362,7 +447,7 @@
 		margin-right: 4%;
 	}
 
-	#inscricoes h2 {
+	#inscricoes > h2 {
 		width: 92%;
 		margin-left: 4%;
 		margin-right: 4%;
