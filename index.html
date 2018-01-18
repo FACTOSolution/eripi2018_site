@@ -28,7 +28,7 @@
 <body>
 
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 			<h1 id="head">
 				<img src="assets/img/logoERIPI.png" alt="ERIPI">
 			</h1>
@@ -38,7 +38,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="menu">
 				<ul class="navbar-nav mt-lg-0 mx-auto">
-					<li class="nav-item"><a class="nav-link link" href="#">Home</a></li>
+					<li class="nav-item"><a class="nav-link link" href="#intro">Home</a></li>
 					<li class="nav-item"><a class="nav-link link" href="#apresentacao">Apresentação</a></li>
 					<li class="nav-item"><a class="nav-link link" href="#programacao">Programação</li></a></li>
 					<li class="nav-item"><a class="nav-link link" href="#palestrantes">Palestrantes</li></a></li>
@@ -469,145 +469,146 @@
 				</div>
 				<p><em>OBS: Os valores não incluem a inscrição nos minicursos. O participante tem direito a no máximo dois minicursos no valor de R$ 5,00 cada.</em></p>
 			</div>
-		</section>
 
-		<section class="sub-trabalhos">
-			<h2>Submissão de Artigos</h2>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="nav flex-column nav-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-							<a class="nav-link active" id="artigos_1_tab" data-toggle="tab" href="#artigos_1" role="tab" aria-controls="artigos_1" aria-selected="true">
-								<i class="icon-long-arrow-right"></i> &nbsp Chamada de Artigos
-							</a>
-							<a class="nav-link" id="artigos_2_tab" data-toggle="tab" href="#artigos_2" role="tab" aria-controls="artigos_2" aria-selected="false">
-								<i class="icon-long-arrow-right"></i> &nbsp Regras para Submissão
-							</a>
-							<a class="nav-link" id="artigos_3_tab" data-toggle="tab" href="#artigos_3" role="tab" aria-controls="artigos_3" aria-selected="false">
-								<i class="icon-long-arrow-right"></i> &nbsp Premiação
-							</a>
-							<a class="nav-link" id="artigos_4_tab" data-toggle="tab" href="#artigos_4" role="tab" aria-controls="artigos_4" aria-selected="false">
-								<i class="icon-long-arrow-right"></i> &nbsp Temas de Interesse
-							</a>
+			<div class="sub-trabalhos">
+				<h2>Submissão de Artigos</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="nav flex-column nav-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<a class="nav-link active" id="artigos_1_tab" data-toggle="tab" href="#artigos_1" role="tab" aria-controls="artigos_1" aria-selected="true">
+									<i class="icon-long-arrow-right"></i> &nbsp Chamada de Artigos
+								</a>
+								<a class="nav-link" id="artigos_2_tab" data-toggle="tab" href="#artigos_2" role="tab" aria-controls="artigos_2" aria-selected="false">
+									<i class="icon-long-arrow-right"></i> &nbsp Regras para Submissão
+								</a>
+								<a class="nav-link" id="artigos_3_tab" data-toggle="tab" href="#artigos_3" role="tab" aria-controls="artigos_3" aria-selected="false">
+									<i class="icon-long-arrow-right"></i> &nbsp Premiação
+								</a>
+								<a class="nav-link" id="artigos_4_tab" data-toggle="tab" href="#artigos_4" role="tab" aria-controls="artigos_4" aria-selected="false">
+									<i class="icon-long-arrow-right"></i> &nbsp Temas de Interesse
+								</a>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="tab-content" id="v-pills-tabContent">
+								<div class="tab-pane fade show active" id="artigos_1" role="tabpanel" aria-labelledby="artigos_1_tabs">
+									<h3>Chamada de Artigos</h3>
+									<p>O Comitê de Organização da III Escola Regional de Informática do Piauí (ERIPI 2018) convida professores, alunos e profissionais a submeter artigos científicos, descrevendo resultados de trabalhos de pesquisa ou de aplicação tecnológica. Cada artigo será submetido à avaliação cega por pares (double-blind reviewing) e julgado segundo sua relevância técnico-científica, adequação ao evento, estrutura, qualidade do texto, resultados apresentados, dentre outros aspectos.</p>
+									<p>Os artigos devem seguir obrigatoriamente o formato definido pela SBC - Sociedade Brasileira de Computação (<a href="http://sbc.org.br/documentos-da-sbc/summary/169-templates-para-artigos-e-capitulos-de-livros/878-modelosparapublicaodeartigos">disponível aqui</a>).</p>
+								</div>
+								<div class="tab-pane fade" id="artigos_2" role="tabpanel" aria-labelledby="artigos_2_tabs">
+									<h3>Regras para Submissão de Artigos</h3>
+									<ul>
+										<li>Todos os artigos devem estar no formato Adobe PDF;</li>
+										<li>Deverão ser escritos em inglês ou português;</li>
+										<li>Os artigos não poderão ultrapassar 6 páginas, incluindo tabelas, figuras e referências.</li>
+										<li>Na página de rosto do artigo não deverá constar nenhum tipo de identificação dos autores. Os artigos que possuírem identificação serão imediatamente rejeitados.</li>
+										<li>Os autores também podem omitir, se desejarem, informações no texto que permitam inferir a autoria do artigo (As informações de autoria deverão ser fornecidas exclusivamente na submissão pelo sistema JEMS - (<a href="https://submissoes.sbc.org.br/home.cgi?c=2733">acesso aqui</a>).</li>
+										<li>Na versão final do artigo, caso aceito, os dados dos autores e filiações deverão ser incluídos.</li>
+										<li>Recomenda-se evitar a menção direta a nomes pessoais (professores, alunos, escolas, municípios, etc.) trocando-os por identificadores genéricos (Escola A, Aluno 1, etc.).</li>
+										<li>Todo e qualquer artigo para o ERIPI 2018 deverá ser submetida apenas em formato eletrônico, por meio do sistema JEMS (<a href="https://submissoes.sbc.org.br/home.cgi?c=2733">acesso aqui</a>).
+										A aceitação de um artigo implica que pelo menos um dos seus autores irá se inscrever no evento para apresentá-lo em sessão técnica oral.</li>
+									</ul>
+								</div>
+								<div class="tab-pane fade" id="artigos_3" role="tabpanel" aria-labelledby="artigos_3_tabs">
+									<h3>Premiação</h3>
+									<p>O Comitê Técnico anunciará durante o evento os cinco melhores artigos da ERIPI 2018. Os autores desses artigos garantirão também a sua publicação em uma Revista Qualis a ser definida em breve.</p>
+								</div>
+								<div class="tab-pane fade" id="artigos_4" role="tabpanel" aria-labelledby="artigos_4_tabs">
+									<h3>TEMAS DE INTERESSE</h3>
+									<p>A lista não-exaustiva de tópicos de interesse inclui:</p>
+									<ul>
+										<li>Arquitetura de Computadores</li>
+										<li>Computação Gráfica</li>
+										<li>Concepção de Circuitos, Sistemas Integrados e Sistemas Embarcados</li>
+										<li>Engenharia de Software</li>
+										<li>Gestão de Tecnologia da Informação</li>
+										<li>Inclusão Digital</li>
+										<li>Informática Industrial</li>
+										<li>Informática Médica</li>
+										<li>Informática na Educação</li>
+										<li>Inteligência Artificial</li>
+										<li>Internet das Coisas</li>
+										<li>Linguagens de Programação</li>
+										<li>Processamento de Imagens</li>
+										<li>Processamento de linguagem natural</li>
+										<li>Redes de Computadores</li>
+										<li>Redes de Sensores sem Fio</li>
+										<li>Redes Veiculares</li>
+										<li>Sistemas Distribuídos</li>
+										<li>Sistemas Hipermídia, Multimídia e Web</li>
+										<li>Sistemas Operacionais</li>
+										<li>Software livre</li>
+										<li>TV Digital</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-8">
-						<div class="tab-content" id="v-pills-tabContent">
-							<div class="tab-pane fade show active" id="artigos_1" role="tabpanel" aria-labelledby="artigos_1_tabs">
-								<h3>Chamada de Artigos</h3>
-								<p>O Comitê de Organização da III Escola Regional de Informática do Piauí (ERIPI 2018) convida professores, alunos e profissionais a submeter artigos científicos, descrevendo resultados de trabalhos de pesquisa ou de aplicação tecnológica. Cada artigo será submetido à avaliação cega por pares (double-blind reviewing) e julgado segundo sua relevância técnico-científica, adequação ao evento, estrutura, qualidade do texto, resultados apresentados, dentre outros aspectos.</p>
-								<p>Os artigos devem seguir obrigatoriamente o formato definido pela SBC - Sociedade Brasileira de Computação (<a href="http://sbc.org.br/documentos-da-sbc/summary/169-templates-para-artigos-e-capitulos-de-livros/878-modelosparapublicaodeartigos">disponível aqui</a>).</p>
+				</div>
+			</div>
+			<div class="sub-trabalhos">
+				<h2>Submissão de Minicursos</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="nav flex-column nav-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<a class="nav-link active" id="minicursos_1_tab" data-toggle="tab" href="#minicursos_1" role="tab" aria-controls="minicursos_1" aria-selected="true">
+									<i class="icon-long-arrow-right"></i> &nbsp Chamada de Minicursos
+								</a>
+								<a class="nav-link" id="minicursos_2_tab" data-toggle="tab" href="#minicursos_2" role="tab" aria-controls="minicursos_2" aria-selected="false">
+									<i class="icon-long-arrow-right"></i> &nbsp Temas de Interesse
+								</a>
 							</div>
-							<div class="tab-pane fade" id="artigos_2" role="tabpanel" aria-labelledby="artigos_2_tabs">
-								<h3>Regras para Submissão de Artigos</h3>
-								<ul>
-									<li>Todos os artigos devem estar no formato Adobe PDF;</li>
-									<li>Deverão ser escritos em inglês ou português;</li>
-									<li>Os artigos não poderão ultrapassar 6 páginas, incluindo tabelas, figuras e referências.</li>
-									<li>Na página de rosto do artigo não deverá constar nenhum tipo de identificação dos autores. Os artigos que possuírem identificação serão imediatamente rejeitados.</li>
-									<li>Os autores também podem omitir, se desejarem, informações no texto que permitam inferir a autoria do artigo (As informações de autoria deverão ser fornecidas exclusivamente na submissão pelo sistema JEMS - (<a href="https://submissoes.sbc.org.br/home.cgi?c=2733">acesso aqui</a>).</li>
-									<li>Na versão final do artigo, caso aceito, os dados dos autores e filiações deverão ser incluídos.</li>
-									<li>Recomenda-se evitar a menção direta a nomes pessoais (professores, alunos, escolas, municípios, etc.) trocando-os por identificadores genéricos (Escola A, Aluno 1, etc.).</li>
-									<li>Todo e qualquer artigo para o ERIPI 2018 deverá ser submetida apenas em formato eletrônico, por meio do sistema JEMS (<a href="https://submissoes.sbc.org.br/home.cgi?c=2733">acesso aqui</a>).
-									A aceitação de um artigo implica que pelo menos um dos seus autores irá se inscrever no evento para apresentá-lo em sessão técnica oral.</li>
-								</ul>
-							</div>
-							<div class="tab-pane fade" id="artigos_3" role="tabpanel" aria-labelledby="artigos_3_tabs">
-								<h3>Premiação</h3>
-								<p>O Comitê Técnico anunciará durante o evento os cinco melhores artigos da ERIPI 2018. Os autores desses artigos garantirão também a sua publicação em uma Revista Qualis a ser definida em breve.</p>
-							</div>
-							<div class="tab-pane fade" id="artigos_4" role="tabpanel" aria-labelledby="artigos_4_tabs">
-								<h3>TEMAS DE INTERESSE</h3>
-								<p>A lista não-exaustiva de tópicos de interesse inclui:</p>
-								<ul>
-									<li>Arquitetura de Computadores</li>
-									<li>Computação Gráfica</li>
-									<li>Concepção de Circuitos, Sistemas Integrados e Sistemas Embarcados</li>
-									<li>Engenharia de Software</li>
-									<li>Gestão de Tecnologia da Informação</li>
-									<li>Inclusão Digital</li>
-									<li>Informática Industrial</li>
-									<li>Informática Médica</li>
-									<li>Informática na Educação</li>
-									<li>Inteligência Artificial</li>
-									<li>Internet das Coisas</li>
-									<li>Linguagens de Programação</li>
-									<li>Processamento de Imagens</li>
-									<li>Processamento de linguagem natural</li>
-									<li>Redes de Computadores</li>
-									<li>Redes de Sensores sem Fio</li>
-									<li>Redes Veiculares</li>
-									<li>Sistemas Distribuídos</li>
-									<li>Sistemas Hipermídia, Multimídia e Web</li>
-									<li>Sistemas Operacionais</li>
-									<li>Software livre</li>
-									<li>TV Digital</li>
-								</ul>
+						</div>
+						<div class="col-md-8">
+							<div class="tab-content" id="v-pills-tabContent">
+								<div class="tab-pane fade show active" id="minicursos_1" role="tabpanel" aria-labelledby="minicursos_1_tabs">
+									<h3>Chamada de Minicursos</h3>
+									<p>O Comitê de Organização da III Escola Regional de Informática do Piauí (ERIPI 2018) convida pesquisadores e profissionais a submeter proposta de minicursos com duração de 4 (quatro) horas, abordando os temas sugeridos nesta Chamada de Trabalhos. Os minicursos devem ser submetidos através da plataforma JEMS (<a href="https://submissoes.sbc.org.br/home.cgi?c=2750">clique para acesso</a>).</p>
+	
+									<p>Para o processo de seleção, os autores deverão enviar Resumo do Minicurso contendo título, autores (indicando o provável apresentador), instituição de vínculo, currículo resumido dos autores, público alvo e o próprio resumo. O resumo deve especificar a estrutura do texto em seções e conter a bibliografia a ser usada. A estrutura deve trazer relevância da proposta, conteúdo programático, metodologia do minicurso (especificando a prática, existindo). Cada proposta será submetida à avaliação por pares e julgada segundo sua relevância técnico-científica, adequação ao evento, resumo e qualidade do texto.</p>
+	
+									<p>Autores de minicursos selecionados deverão submeter, na data indicada abaixo, o texto final do capítulo (com até 25 páginas) a ser publicado em livro com ISBN. O capítulo deverá estar de acordo com o formato da Sociedade Brasileira de Computação – SBC (<a href="https://submissoes.sbc.org.br/home.cgi?c=2750">disponível aqui</a>).</p>
+	
+									<p>A aceitação de um minicurso implica que pelo menos um dos seus autores deverá se inscrever no evento para apresentação do conteúdo.</p>
+								</div>
+								<div class="tab-pane fade" id="minicursos_2" role="tabpanel" aria-labelledby="minicursos_2_tabs">
+									<h3>TEMAS DE INTERESSE</h3>
+									<p>A lista não-exaustiva de tópicos de interesse inclui:</p>
+									<ul>
+										<li>Arquitetura de Computadores</li>
+										<li>Computação Gráfica</li>
+										<li>Concepção de Circuitos, Sistemas Integrados e Sistemas Embarcados</li>
+										<li>Engenharia de Software</li>
+										<li>Gestão de Tecnologia da Informação</li>
+										<li>Inclusão Digital</li>
+										<li>Informática Industrial</li>
+										<li>Informática na Educação</li>
+										<li>Informática Pública</li>
+										<li>Inteligência Artificial</li>
+										<li>Internet das Coisas</li>
+										<li>Linguagens de Programação</li>
+										<li>Processamento de Imagens</li>
+										<li>Processamento de linguagem natural</li>
+										<li>Realidade Virtual</li>
+										<li>Redes de Computadores</li>
+										<li>Robótica</li>
+										<li>Sistemas Distribuídos</li>
+										<li>Sistemas Hipermídia, Multimídia e Web</li>
+										<li>Sistemas Operacionais</li>
+										<li>Software livre</li>
+										<li>TV Digital</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="sub-trabalhos">
-			<h2>Submissão de Minicursos</h2>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="nav flex-column nav-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-							<a class="nav-link active" id="minicursos_1_tab" data-toggle="tab" href="#minicursos_1" role="tab" aria-controls="minicursos_1" aria-selected="true">
-								<i class="icon-long-arrow-right"></i> &nbsp Chamada de Minicursos
-							</a>
-							<a class="nav-link" id="minicursos_2_tab" data-toggle="tab" href="#minicursos_2" role="tab" aria-controls="minicursos_2" aria-selected="false">
-								<i class="icon-long-arrow-right"></i> &nbsp Temas de Interesse
-							</a>
-						</div>
-					</div>
-					<div class="col-md-8">
-						<div class="tab-content" id="v-pills-tabContent">
-							<div class="tab-pane fade show active" id="minicursos_1" role="tabpanel" aria-labelledby="minicursos_1_tabs">
-								<h3>Chamada de Minicursos</h3>
-								<p>O Comitê de Organização da III Escola Regional de Informática do Piauí (ERIPI 2018) convida pesquisadores e profissionais a submeter proposta de minicursos com duração de 4 (quatro) horas, abordando os temas sugeridos nesta Chamada de Trabalhos. Os minicursos devem ser submetidos através da plataforma JEMS (<a href="https://submissoes.sbc.org.br/home.cgi?c=2750">clique para acesso</a>).</p>
 
-								<p>Para o processo de seleção, os autores deverão enviar Resumo do Minicurso contendo título, autores (indicando o provável apresentador), instituição de vínculo, currículo resumido dos autores, público alvo e o próprio resumo. O resumo deve especificar a estrutura do texto em seções e conter a bibliografia a ser usada. A estrutura deve trazer relevância da proposta, conteúdo programático, metodologia do minicurso (especificando a prática, existindo). Cada proposta será submetida à avaliação por pares e julgada segundo sua relevância técnico-científica, adequação ao evento, resumo e qualidade do texto.</p>
-
-								<p>Autores de minicursos selecionados deverão submeter, na data indicada abaixo, o texto final do capítulo (com até 25 páginas) a ser publicado em livro com ISBN. O capítulo deverá estar de acordo com o formato da Sociedade Brasileira de Computação – SBC (<a href="https://submissoes.sbc.org.br/home.cgi?c=2750">disponível aqui</a>).</p>
-
-								<p>A aceitação de um minicurso implica que pelo menos um dos seus autores deverá se inscrever no evento para apresentação do conteúdo.</p>
-							</div>
-							<div class="tab-pane fade" id="minicursos_2" role="tabpanel" aria-labelledby="minicursos_2_tabs">
-								<h3>TEMAS DE INTERESSE</h3>
-								<p>A lista não-exaustiva de tópicos de interesse inclui:</p>
-								<ul>
-									<li>Arquitetura de Computadores</li>
-									<li>Computação Gráfica</li>
-									<li>Concepção de Circuitos, Sistemas Integrados e Sistemas Embarcados</li>
-									<li>Engenharia de Software</li>
-									<li>Gestão de Tecnologia da Informação</li>
-									<li>Inclusão Digital</li>
-									<li>Informática Industrial</li>
-									<li>Informática na Educação</li>
-									<li>Informática Pública</li>
-									<li>Inteligência Artificial</li>
-									<li>Internet das Coisas</li>
-									<li>Linguagens de Programação</li>
-									<li>Processamento de Imagens</li>
-									<li>Processamento de linguagem natural</li>
-									<li>Realidade Virtual</li>
-									<li>Redes de Computadores</li>
-									<li>Robótica</li>
-									<li>Sistemas Distribuídos</li>
-									<li>Sistemas Hipermídia, Multimídia e Web</li>
-									<li>Sistemas Operacionais</li>
-									<li>Software livre</li>
-									<li>TV Digital</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 		
 		<section id="hospedagem">
 			Hospedagem
@@ -629,6 +630,7 @@
 	<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/countdown.js"></script>
 	<script type="text/javascript" src="assets/bootstrap-4.0.0-beta.3-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/navigation.js"></script>
 
 </body>
 </html>
