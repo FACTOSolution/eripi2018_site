@@ -56,6 +56,18 @@
 	-moz-transition: 0.3s;
 }
 
+#menu .selectedNavItem{
+	background-color: #313131;
+	border: 1px solid #353535;
+	border-radius: 18px 0px;
+	-webkit-border-radius: 18px 0px;
+	-moz-border-radius: 18px 0px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	color: white;
+}
+
 #intro {
 	box-sizing: border-box;
 	width: 100%;
@@ -297,7 +309,7 @@
 	margin-bottom: 4vh;
 }
 
-#inscricoes .container h3 {
+#inscricoes .container .col-md-4 > h3 {
 	background-color: #2777B9;
 	color: white;
 	font-weight: bold;
@@ -314,7 +326,7 @@
 	font-size: calc(100vh/55);
 }
 
-#inscricoes .container a {
+#inscricoes .container table + a {
 	display: block;
 	color: white;
 	background-color: #2777B9;
@@ -325,14 +337,14 @@
 	padding: 2vh;
 }
 
-#inscricoes .container a:hover {
+#inscricoes .container table + a:hover {
 	background-color: #1E629A;
 	transition: 0.5s;
 	-moz-transition: 0.5s;
 	-webkit-transition: 0.5s;
 }
 
-#inscricoes .container p {
+#inscricoes .container > p {
 	margin: 4vh auto;
 	text-align: right;
 	font-weight: bold;
@@ -345,7 +357,7 @@
 	padding: 4vh;
 }
 
-.sub-trabalhos h2 {
+.sub-trabalhos > h2 {
 	text-align: center;
 	font-size: calc(100vh/18);
 	padding-left: 2vh;
