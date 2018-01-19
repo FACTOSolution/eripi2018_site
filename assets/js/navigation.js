@@ -40,8 +40,9 @@ window.onscroll = function(e){
         var elem = $(sectionItems[i]);
         var off = elem.offset().top;
         var diff = off - $('nav #head').height();
-        if( ( Math.trunc(diff > 0?diff:0) >= winScroll ) && 
-            ( winScroll < Math.trunc(off + elem.height())) ){
+
+        if( ( Math.trunc(diff > 0?diff:0) <= winScroll ) && 
+            ( winScroll < Math.trunc(diff + elem.height() + 1)) ){
             selectedNavItem(mapSectionNav.get('#'+sectionItems[i].id));
             break;
         }
