@@ -265,7 +265,7 @@
 	-webkit-transition: 0.5s;
 }
 
-#palestrantes .card figure > .container {
+#palestrantes .card figure > .container-fluid {
 	padding: 0;
 }
 
@@ -302,15 +302,15 @@
 	border-right: 10px solid #2777B9;
 }
 
-#inscricoes .container {
+#inscricoes .container-fluid {
 	margin: 4vh auto;
 }
 
-#inscricoes .container .col-md-4 {
+#inscricoes .container-fluid .col-md-4 {
 	margin-bottom: 4vh;
 }
 
-#inscricoes .container .col-md-4 > h3 {
+#inscricoes .container-fluid .col-md-4 > h3 {
 	background-color: #2777B9;
 	color: white;
 	font-weight: bold;
@@ -319,15 +319,15 @@
 	margin-bottom: 0;
 }
 
-#inscricoes .container table {
+#inscricoes .container-fluid table {
 	margin-bottom: 0;
 }
 
-#inscricoes .container th,td {
+#inscricoes .container-fluid th,td {
 	font-size: calc(100vh/55);
 }
 
-#inscricoes .container table + a {
+#inscricoes .container-fluid table + a {
 	display: block;
 	color: white;
 	background-color: #2777B9;
@@ -338,14 +338,14 @@
 	padding: 2vh;
 }
 
-#inscricoes .container table + a:hover {
+#inscricoes .container-fluid table + a:hover {
 	background-color: #1E629A;
 	transition: 0.5s;
 	-moz-transition: 0.5s;
 	-webkit-transition: 0.5s;
 }
 
-#inscricoes .container > p {
+#inscricoes .container-fluid > p {
 	margin: 4vh auto;
 	text-align: right;
 	font-weight: bold;
