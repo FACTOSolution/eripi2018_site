@@ -535,6 +535,83 @@
 	display: block;
 }
 
+#contato {
+	width: 100%;
+	background-color: #222;
+	padding: 4vh;
+	color: #ccc;
+}
+
+#contato:hover > h2 > span{
+	width: 100%;
+	transition: 2s;
+}
+
+#contato > h2 {
+	font-weight: bold;
+	font-size: calc(100vh/18);
+	padding-top: 2vh;
+	border-bottom: 1px solid rgba(253, 128, 1, 1);
+	margin-bottom: 2vh;
+	margin-left: 8vh;
+}
+
+#contato > h2 > span {
+	display: block;
+	width: 10%;
+	border: 2px solid rgba(253, 128, 1, 1);
+}
+
+#contato .info {
+	margin: 2vh auto;
+}
+
+#contato .info h3 {
+	font-size: calc(100vh/30);
+	font-weight: bold;
+	margin: 0 auto;
+}
+
+#contato .info p {
+	font-size: calc(100vh/45);
+	margin: 0 auto;
+}
+
+#contato iframe {
+	border: 4px solid rgba(253, 128, 1, 1);
+	width: 100%;
+	height: 45vh;
+}
+
+#contato form {
+	padding: 2vh;
+}
+
+#contato .form-input {
+	display: block;
+	padding: 1vh 2vh;
+	margin: 1vh auto;
+	width: 100%;
+	border: 1px solid;
+	border-color: #292929;
+	background-color: rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .55);
+}
+
+#contato [type="submit"] {
+	font-weight: bolder;
+	background-color: rgba(253, 128, 1, 1);
+	padding: 1vh 4vh;
+	border: 0;
+	color: white;
+}
+
+#contato [type="submit"]:hover {
+	background-color: rgba(200, 80, 0, 1);
+	color: #222;
+	transition: 0.3s;
+}
+
 @media (max-width: 980px) {
 	#hospedagem > h2 {
 		width: 80%;
@@ -582,6 +659,7 @@
 	background-color: rgba(200, 80, 0, 1);
 	text-decoration: none;
 	color: #222;
+	transition: 0.3s;
 }
 
 .Topo {
