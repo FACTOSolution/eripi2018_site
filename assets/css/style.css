@@ -574,7 +574,7 @@ body {
 
 #contato .info h3 {
 	font-size: calc(100vh/30);
-	font-weight: bold;
+	font-weight: lighter;
 	margin: 0 auto;
 }
 
@@ -590,7 +590,7 @@ body {
 }
 
 #contato form {
-	padding: 2vh;
+	padding-top: 2vh;
 }
 
 #contato .form-input {
@@ -697,4 +697,17 @@ footer .dev:hover {
     padding: 1em;
     display: none;
     border-radius: 4px; 
+}
+
+div {
+	font-family: 'Spinnaker', sans-serif;
+}
+
+#apresentacao h2,
+#programacao h2,
+#palestrantes h2,
+#inscricoes h2,
+#hospedagem h2,
+#contato h2 {
+	font-weight: bold;
 }
