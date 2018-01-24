@@ -24,6 +24,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/fontawesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/aos/aos.css">
 </head>
 <body>
 
@@ -89,26 +90,26 @@
 		</div>
 		<section id="apresentacao">
 			
-			<h2>Prepare-se para o evento</h2>
-			<div id="contagem"></div>
+			<h2 data-aos="fade-up">Prepare-se para o evento</h2>
+			<div id="contagem" data-aos="fade-right"></div>
 			
-			<h2>Apresentação</h2>
+			<h2 data-aos="fade-up">Apresentação</h2>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6">
-						<figure>
+						<figure data-aos="fade-right">
 							<img src="assets/img/logo-eripi.png">
 						</figure>
 					</div>
-					<div class="col-md-6 sobre">
+					<div class="col-md-6 sobre" data-aos="fade-left">
 						<p>A Escola Regional de Informática do Piauí tem como objetivo promover a disseminação de conhecimentos e experiências agregando as instituições de ensino superior do estado Piauí. Apesar de sua ênfase na agregação regional, a escola contará com a participação de convidados e palestrantes de diversas localidades do país.</p>
 
 						<p>A ERIPI é promovida pela Sociedade Brasileira de Computação (SBC), uma das maiores sociedades científicas do país com atuação diversa em questões nacionais relativas à informática. O evento é organizado por um comitê composto por representantes institucionais da SBC em Instituições de Ensino Superior (IES) do estado, que tenham cursos na área de computação.</p>
 					</div>
 				</div>
 			</div>
-			<h2 id="comissao">Comissões</h2>
-			<div class="container-fluid sobre">
+			<h2 id="comissao" data-aos="flip-right">Comissões</h2>
+			<div class="container-fluid sobre" data-aos="fade-up">
 				<div class="row">
 					<div class="col-md-6">
 						<h3>Coordenação Geral</h3>
@@ -198,8 +199,8 @@
 		</div>
 		
 		<section id="programacao">
-			<h2>Programação</h2>
-			<div class="container-fluid">
+			<h2 data-aos="fade-up">Programação</h2>
+			<div data-aos="zoom-in" class="container-fluid">
 			
 				<div class="row">
 					<div class="col-md-12">
@@ -335,11 +336,11 @@
 		</section>
 		
 		<section id="palestrantes">
-			<h2>Palestrantes</h2>
+			<h2 data-aos="fade-down">Palestrantes</h2>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6">
-						<div class="card">
+						<div data-aos="fade-right" class="card">
 							<figure>
 								<div class="container-fluid">
 									<div class="row">
@@ -356,7 +357,7 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<div class="card">
+						<div data-aos="fade-left" class="card">
 							<figure>
 								<div class="container-fluid">
 									<div class="row">
@@ -379,10 +380,10 @@
 		</section>
 		
 		<section id="inscricoes">
-			<h2>Inscrições</h2>
+			<h2 data-aos="fade-left">Inscrições</h2>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
 						<h3>Estudante de Ensino Médio, Técnico ou Graduação</h3>
 						<table class="table table-striped">
 							<tbody>
@@ -410,7 +411,7 @@
 						</table>
 						<a href="">Inscrever-se</a>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
 						<h3>Estudante de Pós-Graduação</h3>
 						<table class="table table-striped">
 							<tbody>
@@ -438,7 +439,7 @@
 						</table>
 						<a href="">Inscrever-se</a>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
 						<h3>Profissionais</h3>
 						<table class="table table-striped">
 							<tbody>
@@ -612,11 +613,11 @@
 		</section>
 
 		<section id="hospedagem">
-			<h2>Hospedagem</h2>
+			<h2 data-aos="zoom-in-up">Hospedagem</h2>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6">
-						<div class="card">
+						<div class="card" data-aos="fade-up-right">
 							<h3><i class="fas fa-home"></i> Holiday Hotel</h3>
 							<p><i class="fas fa-map-marker"></i> &nbsp; <b>Endereço:</b> Av. Senador Helvídio Nunes, 3451 - Dner, Picos - PI, 64607-515</p>
 							<p><i class="fas fa-phone"></i> &nbsp; <b>Telefone:</b> (89) 3415-4139</p>
@@ -633,7 +634,7 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<div class="card">
+						<div class="card" data-aos="fade-up-left">
 							<h3><i class="fas fa-home"></i> Entre Rios Hotel</h3>
 							<p><i class="fas fa-map-marker"></i> &nbsp; <b>Endereço:</b> Av. Senador Helvídio Nunes, 879 - Boa Sorte, Picos - PI, 64607-085</p>
 							<p><i class="fas fa-phone"></i> &nbsp; <b>Telefone:</b> (89) 3422-6677</p>
@@ -653,40 +654,40 @@
 			</div>
 
 			<div id="realizacao">
-				<h2>Realização, Apoio e Patrocínio</h2>
+				<h2 data-aos="fade-down">Realização, Apoio e Patrocínio</h2>
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-md-3 imagem">
+						<div class="col-md-3 imagem" data-aos="fade-up">
 							<a href="http://www.sbc.org.br/" target="_blank">
 								<img src="assets/img/realizacao/logo-sbc.png">
 							</a>
 						</div>
-						<div class="col-md-3 imagem">
+						<div class="col-md-3 imagem" data-aos="fade-up">
 							<a href="http://ufpi.br" target="_blank">
 								<img src="assets/img/realizacao/logo-ufpi.png">
 							</a>
 						</div>
-						<div class="col-md-3 imagem">
+						<div class="col-md-3 imagem" data-aos="fade-up">
 							<a href="http://www.uespi.br/site/" target="_blank">
 								<img src="assets/img/realizacao/logo-uespi.png">
 							</a>
 						</div>
-						<div class="col-md-3 imagem">
+						<div class="col-md-3 imagem" data-aos="fade-up">
 							<a href="http://www.ifpi.edu.br/" target="_blank">
 								<img src="assets/img/realizacao/logo-ifpi.png">
 							</a>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-4 imagem">
+						<div class="col-md-4 imagem" data-aos="fade-up">
 							<a href="http://www.sigaa.ufpi.br/sigaa/public/programa/portal.jsf?id=615" target="_blank">
 								<img src="assets/img/realizacao/logo-ppgcc.png">
 							</a>
 						</div>
-						<div class="col-md-4 imagem">
+						<div class="col-md-4 imagem" data-aos="fade-up">
 							<a><img src="assets/img/realizacao/logo-infoway.png"></a>
 						</div>
-						<div class="col-md-4 imagem">
+						<div class="col-md-4 imagem" data-aos="fade-up">
 							<a href="http://www.ceut.com.br/" target="_blank">
 								<img src="assets/img/realizacao/logo-estacio.png">
 							</a>
@@ -697,10 +698,10 @@
 		</section>
 
 		<section id="contato">
-			<h2>Contato<span></span></h2>
+			<h2 data-aos="fade-right">Contato<span></span></h2>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6" data-aos="fade-right">
 						<div class="info">
 							<h3>Escola Regional de Informática do Piauí 2018</h3>	
 							<p><i class="fas fa-map-marker"></i> &nbsp; CTT - Colégio Técnico de Teresina</p>
@@ -708,7 +709,7 @@
 						</div>
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18905.063023613573!2d-42.79910561973121!3d-5.055047591382031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e397c00000001%3A0xcde32e688ebf8fca!2sCol%C3%A9gio+T%C3%A9cnico+de+Teresina+-+CTT!5e0!3m2!1spt-BR!2sbr!4v1516725617965"></iframe>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6" data-aos="fade-left">
 						<div class="info">
 							<h3>Fale Conosco</h3>
 						</div>
@@ -736,5 +737,15 @@
 	<script type="text/javascript" src="assets/bootstrap-4.0.0-beta.3-dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/navigation.js"></script>
 	<script type="text/javascript" src="assets/js/botao.js"></script>
+	<script type="text/javascript" src="assets/aos/aos.js"></script>
+	<script type="text/javascript">
+		AOS.init({
+			offset: 200,
+			duration: 600,
+			easing: 'ease-in-sine',
+			delay: 100,
+			once: true
+		});
+	</script>
 </body>
 </html>

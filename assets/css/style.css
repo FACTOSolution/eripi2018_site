@@ -8,6 +8,10 @@
 	to { opacity: 1; }
 }
 
+body {
+	 overflow-x: hidden;
+}
+
 #head {
 	position: relative;
 	float: left;
