@@ -31,11 +31,6 @@ window.onscroll = function(e){
     
     var len = sectionItems.length;
     var winScroll = window.scrollY;
-    if(winScroll > 0){
-        $('.navbar').addClass('fixed-top');
-    }else{
-        $('.navbar').removeClass('fixed-top');
-    }
     for(var i = 0; i < len; i++){
         var elem = $(sectionItems[i]);
         var off = elem.offset().top;

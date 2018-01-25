@@ -29,6 +29,10 @@ body {
 	-moz-transition: 0.3s;
 }
 
+header{
+	min-height: 64px;
+}
+
 #head img:hover {
 	transform: scale(1.05, 1.05);
 	-moz-transform: scale(1.05, 1.05);
