@@ -1,25 +1,21 @@
 var ringer = {
 	countdown_to: "05/28/2018",
 	rings: {
-		'DAYS': { 
+		'Dias': { 
 			s: 86400000, // mseconds in a day,
 			max: 365
 		},
-		'HOURS': {
+		'Horas': {
 			s: 3600000, // mseconds per hour,
 			max: 24
 		},
-		'MINUTES': {
+		'Minutos': {
 			s: 60000, // mseconds per minute
 			max: 60
 		},
-		'SECONDS': {
+		'Segundos': {
 			s: 1000,
 			max: 60
-		},
-		'MICROSEC': {
-			s: 10,
-			max: 100
 		}
 	},
 	r_count: 5,
