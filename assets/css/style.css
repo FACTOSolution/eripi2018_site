@@ -200,7 +200,7 @@ header{
 }
 
 #programacao a {
-	padding: 2vh 6vh;
+	padding: 2vh 4vh;
 	color: #000;
 	background-color: #fafafa;
 	margin-left: 0.5vh;
@@ -208,6 +208,7 @@ header{
 	display: block;
 	text-align: center;
 	width: 36vh;
+	font-size: calc(100vh/45);
 }
 
 #programacao a:hover {
