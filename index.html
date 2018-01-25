@@ -23,7 +23,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/countdown.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/fontawesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/css/fontawesome-all.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/aos/aos.css">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Spinnaker">
 	<!--[if lt IE 9]>
@@ -96,7 +96,15 @@
 		<section id="apresentacao">
 			
 			<h2 data-aos="fade-up">Prepare-se para o evento</h2>
-			<div id="contagem" data-aos="fade-right"></div>
+			<div class="container-fluid">
+				<div class="row" data-aos="fade-right">
+					<div class="col-lg-4 col-md-3 col-sm-2 col-0"></div>
+					<div class="col-lg-5 col-md-7 col-sm-10 col-12">
+						<div id="contagem"></div>
+					</div>
+					<div class="col-lg-3 col-md-2 col-sm-0 col-0"></div>
+				</div>
+			</div>
 			
 			<h2 data-aos="fade-up">Apresentação</h2>
 			<div class="container-fluid">
