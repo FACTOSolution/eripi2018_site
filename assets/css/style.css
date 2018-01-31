@@ -260,6 +260,12 @@ header nav {
 	-moz-animation: fadein 1 ease-in 1s;
 }
 
+#programacao .em-breve {
+	background-color: #dee2e6;
+	padding: 8vh;
+	text-align: center;
+}
+
 #palestrantes {
 	width: 100%;
 	padding: 8vh;
