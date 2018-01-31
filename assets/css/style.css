@@ -307,6 +307,10 @@ header nav {
 	-webkit-transition: 0.5s;
 }
 
+#palestrantes .card figure {
+	margin-bottom: 0;
+}
+
 #palestrantes .card figure > .container-fluid {
 	padding: 0;
 }
@@ -316,6 +320,15 @@ header nav {
 	border-radius: 0.5vh;
 	-webkit-border-radius: 0.5vh;
 	-moz-border-radius: 0.5vh;
+}
+
+#palestrantes .card i {
+	display: block;
+	width: 100%;
+	color: #666;
+	font-size: calc(100vh/8);
+	text-align: center;
+	padding: 4vh 8vh;
 }
 
 #palestrantes .card figcaption {
