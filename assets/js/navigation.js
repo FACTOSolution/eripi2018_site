@@ -3,7 +3,7 @@ Math.trunc = Math.trunc || function(x) {
   }
 
 var sectionItems = document.getElementsByTagName('section');
-var navItems = document.getElementsByClassName('nav-link');
+var navItems = document.getElementsByClassName('link');
 var mapSectionNav = new Map();
 for(var i = 0; i < navItems.length; i++){
     var href = navItems[i].getAttribute('href');

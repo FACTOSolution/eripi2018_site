@@ -53,16 +53,10 @@ header nav {
 	padding: 8px;
 	margin: auto 0.5vh;
 	font-size: 1.1em;
-	border-radius: 18px 0;
-	-webkit-border-radius: 18px 0;
-	-moz-border-radius: 18px 0;
 }
 
 .link:hover {
 	background-color: #616161;
-	border-radius: 18px 0;
-	-webkit-border-radius: 18px 0;
-	-moz-border-radius: 18px 0;
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
 	-moz-transition: 0.3s;
@@ -70,13 +64,46 @@ header nav {
 
 #menu .selectedNavItem{
 	background-color: #616161;
-	border-radius: 18px 0;
-	-webkit-border-radius: 18px 0;
-	-moz-border-radius: 18px 0;
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
 	-moz-transition: 0.3s;
 	color: white;
+}
+
+#menu button {
+	border: none;
+	border-radius: 0;
+	background-color: #000;
+	text-decoration: none;
+	padding: 8px;
+	margin: auto 0.5vh;
+	font-size: 1.1em;
+	color: rgba(255,255,255,.5);
+}
+
+#menu button:hover {
+	border: none;
+	background-color: #616161;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+
+#menu button:focus {
+	box-shadow: none;
+}
+
+#menu .dropdown-menu {
+	background-color: #000;
+}
+
+#menu .dropdown-item {
+	color: #fff;
+	margin: 0;
+}
+
+#menu .dropdown-item:hover {
+	background-color: #616161;
 }
 
 #intro {
