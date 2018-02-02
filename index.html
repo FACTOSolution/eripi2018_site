@@ -46,9 +46,9 @@
 				<ul class="navbar-nav mt-lg-0 mx-auto">
 					<li class="nav-item"><a class="nav-link link" href="#intro">Home</a></li>
 					<li class="nav-item"><a class="nav-link link" href="#apresentacao">Apresentação</a></li>
-					<li class="nav-item"><a class="nav-link link" href="#programacao">Programação</li></a></li>
-					<li class="nav-item"><a class="nav-link link" href="#palestrantes">Palestrantes</li></a></li>
-					<li class="nav-item"><a class="nav-link link" href="#inscricoes">Inscrições</li></a></li>
+					<li class="nav-item"><a class="nav-link link" href="#programacao">Programação</a></li>
+					<li class="nav-item"><a class="nav-link link" href="#palestrantes">Palestrantes</a></li>
+					<li class="nav-item"><a class="nav-link link" href="#inscricoes">Inscrições</a></li>
 					<li class="nav-item">
 						<div class="btn-group">
 							<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">Chamadas</button>
@@ -59,8 +59,8 @@
 							</div>
 						</div>
 					</li>
-					<li class="nav-item"><a class="nav-link link" href="#hospedagem">Hospedagem</li></a></li>
-					<li class="nav-item"><a class="nav-link link" href="#contato">Contato</li></a></li>
+					<li class="nav-item"><a class="nav-link link" href="#hospedagem">Hospedagem</a></li>
+					<li class="nav-item"><a class="nav-link link" href="#contato">Contato</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -586,12 +586,13 @@
 						<div class="info">
 							<h3>Fale Conosco</h3>
 						</div>
-						<form method="post">
+						<form id="form-contato" method="post" action="mail.php">
 							<input class="form-input" type="text" name="nome" placeholder="Nome" required>
 							<input class="form-input" type="email" name="email" placeholder="Email" required>
 							<input class="form-input" type="text" name="assunto" placeholder="Assunto" required>
 							<textarea class="form-input" name="mensagem" placeholder="Mensagem" rows="5" required></textarea>
 							<input type="submit" name="enviar" value="Enviar">
+							<div id="resposta"></div>
 						</form>
 					</div>
 				</div>
@@ -621,12 +622,34 @@
 		});
 
 		function resize() {
-			$("#canvas").outerHeight($(window).height()-$("#canvas").offset().top- Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight()));
+			$("#canvas").outerHeight($(window).height()-$("canvas").offset().top- Math.abs($("canvas").outerHeight(true) - $("canvas").outerHeight()));
 		}
 		$(document).ready(function() {
 			resize();
 			$(window).on("resize", function() {
 				resize();
+			});
+
+			$('#form-contato').submit(function(event) {
+				var data = $('#form-contato').serialize();
+				$.ajax({
+					type : 'POST',
+					url : $('#form-contato').attr('action'),
+					data : data,
+					dataType : 'json',
+					encode : true
+				})
+				.done(function(response){
+					console.log('Foi');
+				})
+				.fail(function(response) {
+					console.log('Não foi');
+				});
+				event.preventDefault();
+				var div_resposta = document.getElementById('resposta');
+				div_resposta.style.color = 'green';
+				div_resposta.style.float = 'right';
+				div_resposta.innerHTML = 'Mensagem Enviada com sucesso!';
 			});
 		});
 	</script>
