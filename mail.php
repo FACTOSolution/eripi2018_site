@@ -13,14 +13,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		exit;
 	}
 
-	$recipient = "factos@ufpi.edu.br";
+	$recipient = "kassio_venicios@hotmail.com";
 
 	$email_content = $message;
 	$email_headers = "From: $name <$email>\r\n";
 	$email_headers .= "Reply-To: $name <$email>\r\n";
 	$email_headers .= "Return-Path: $name <$email>\r\n";
-	$email_headers .= "Content-Type: text/html; charset=UTF-8";
-	$email_headers .= "X-Mailer: PHP". phpversion() ."\r\n";
+	$email_headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+	$email_headers .= "X-Mailer: PHP". phpversion();
 
 	if (mail($recipient, $subject, $email_content, $email_headers)) {
 		http_response_code(200);
