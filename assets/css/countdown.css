@@ -1,6 +1,5 @@
 canvas {
 	width: 100%;
-	height: 100%;
 	display: block;
 	position: relative;
 	margin: 8vh auto;
@@ -18,7 +17,6 @@ canvas {
 @media (max-width: 540px) {
 	canvas {
 		width: 100%;
-		height: 80%;
 		margin: 6vh auto;
 	}
 }
