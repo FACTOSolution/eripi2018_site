@@ -194,6 +194,14 @@ header nav {
 	-webkit-transform: scale(1.05,1.05);
 }
 
+#apresentacao iframe {
+	display: block;
+	margin: 8vh auto;
+	width: 340px;
+	height: 500px;
+	overflow: scroll;
+}
+
 .apresentacao-borda {
 	background-color: rgba(253, 128, 1, 0.9);
 	width: 100%;
@@ -764,6 +772,13 @@ footer .dev:hover {
 		width: 92%;
 		margin-left: 4%;
 		margin-right: 4%;	
+	}
+
+	#apresentacao iframe {
+		display: block;
+		margin: 8vh 0;
+		width: 100%;
+
 	}
 }
 
