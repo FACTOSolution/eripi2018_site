@@ -595,40 +595,49 @@ header nav {
 }
 
 #realizacao {
-	width: 100%;
+	margin: 16vh auto;
+}
+
+#realizacao .cartao {
+	position: relative;
 	background-color: white;
+	padding: 0 0 10px 0;
 	border-radius: 2vh;
 	-webkit-border-radius: 2vh;
 	-moz-border-radius: 2vh;
 	border: 8px solid #1E629A;
-	margin: 8vh auto;
+	margin: 2vh auto;
 }
 
-#realizacao > h2 {
+#realizacao h2 {
 	text-align: center;
 	font-size: calc(100vh/22);
 	padding: 2vh 4vh;
-	margin-bottom: 8vh;
 	color: white;
 	background-color: #1E629A;
-}
-
-#realizacao > .container-fluid {
-	margin-bottom: 4vh;
+	margin-bottom: 10px; 
 }
 
 #realizacao .imagem {
 	height: 100px;
-	margin: 10px auto;
+	margin: 10px 20px;
+	display: inline-block;
 }
 
-#realizacao .imagem a {
+#realizacao .imagem-centro {
+	height: 100px;
+	margin: 10px auto;
 	display: block;
 	text-align: center;
 }
 
-#realizacao .imagem img {
-	height: 90px;
+#realizacao .imagem-grupo {
+	display: block;
+	text-align: center;
+}
+
+#realizacao .imagem img, .imagem-centro img {
+	height: 100px;
 }
 
 #contato {
@@ -777,6 +786,10 @@ footer .dev:hover {
 		width: 92%;
 		margin-left: 4%;
 		margin-right: 4%;	
+	}
+
+	#realizacao .cartao {
+		margin: 4vh auto;
 	}
 }
 
