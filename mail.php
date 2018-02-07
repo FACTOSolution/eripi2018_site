@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		exit;
 	}
 
-	$recipient = "kassio_venicios@hotmail.com";
+	$recipient = "eripi@ufpi.edu.br";
 
 	$email_content = $message;
 	$email_headers = "From: $name <$email>\r\n";
