@@ -323,7 +323,7 @@
 								</tr>
 							</tbody>
 						</table>
-						<a href="#inscricoes">Inscrever-se</a>
+						<a href="" data-toggle="modal" data-target="#exampleModal">Inscrever-se</a>
 					</div>
 					<div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
 						<h3>Estudante de Pós-Graduação</h3>
@@ -349,7 +349,7 @@
 								</tr>
 							</tbody>
 						</table>
-						<a href="#inscricoes">Inscrever-se</a>
+						<a href="" data-toggle="modal" data-target="#exampleModal">Inscrever-se</a>
 					</div>
 					<div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
 						<h3>Profissionais</h3>
@@ -375,7 +375,7 @@
 								</tr>
 							</tbody>
 						</table>
-						<a href="#inscricoes">Inscrever-se</a>
+						<a href="" data-toggle="modal" data-target="#exampleModal">Inscrever-se</a>
 					</div>
 				</div>
 				<div class="row">
@@ -397,7 +397,7 @@
 								</tr>
 							</tbody>
 						</table>
-						<a href="#inscricoes">Inscrever-se</a>
+						<a href="" data-toggle="modal" data-target="#exampleModal">Inscrever-se</a>
 					</div>
 					<div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
 						<h3>Professores de Ensino Médio</h3>
@@ -416,7 +416,7 @@
 								</tr>
 							</tbody>
 						</table>
-						<a href="#inscricoes">Inscrever-se</a>
+						<a href="" data-toggle="modal" data-target="#exampleModal">Inscrever-se</a>
 					</div>
 				</div>
 				<!--<p><em>OBS: Os valores não incluem a inscrição nos minicursos. O participante tem direito a no máximo dois minicursos no valor de R$ 5,00 cada.</em></p>-->
@@ -707,6 +707,37 @@
 			<a class="dev" href="http://factos.ufpi.br" target="_blank"> FACTOS</a>
 			<a href="#" class="Topo"><i class="fas fa-arrow-up"></i></a>
 		</footer>
+
+		
+
+		<!-- Modal de aviso sobre as inscrições -->
+		<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Termos</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h4>Política de Cancelamento de inscrições:</h4>
+						<br>
+						<p>Cancelamento de inscrições podem ser solicitadas no máximo até o dia <b>01/08/2018</b> (primeiro de agosto de 2018). Solicitações de cancelamentos feitas até esta data, terão direito à <b>70%</b> de reembolso do valor pago. Após esta data não haverá devolução de qualquer valor pago. A política se aplica tanto para o cancelamento da inscrição, quanto para o cancelamento de qualquer atividade adicional. Para solicitar o cancelamento, enviar um e-mail para faturamento@sbc.org.br.</p>
+						<br>
+						<h4>Pagamento de inscrições:</h4>
+						<br>
+						<p>O pagamento de inscrições poderá ser realizado por meio de boleto bancário, cartão de crédito, débito em conta do Banco do Brasil nota de empenho ou faturamento, através do portal. As inscrições podem ser feitas até o último dia do evento, porém os pagamentos por débito e boleto serão fechados dia <b>08/08/2018</b>. Após essa data será possível pagar por cartão de crédito, nota de empenho e faturamento. Para aqueles que não puderem efetuar o pagamento por uma das formas citadas, poderão pagar em espécie na secretaria do evento.</p>
+						<br>
+						<label><input id="leu" type="checkbox"> Li e concordo com os termos</label>
+					</div>
+					<div id="modal-footer" class="modal-footer">
+						<button id="inscreverSBC" type="button" class="desativado">Em breve</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 	<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
@@ -754,6 +785,13 @@
 				div_resposta.style.float = 'right';
 				div_resposta.innerHTML = 'Mensagem Enviada com sucesso!';
 			});
+		});
+
+		var leu = document.getElementById('leu');
+		var botao = document.getElementById('inscreverSBC');
+		leu.addEventListener('click', function(ev) {
+			if(leu.checked) { botao.setAttribute('class', 'ativado'); }
+			else { botao.setAttribute('class', 'desativado'); }
 		});
 	</script>
 </body>
