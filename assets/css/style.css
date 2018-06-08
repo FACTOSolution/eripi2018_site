@@ -746,6 +746,10 @@ footer .dev:hover {
 	height: 100%;
 	padding: 1rem;
 	border: 0;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	font-size: 1.4em;
 }
 
 .desativado {
