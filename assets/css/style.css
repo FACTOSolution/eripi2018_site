@@ -257,7 +257,7 @@ header nav {
 	border-bottom: 1px solid rgba(253, 128, 1, 0.9);
 }
 
-#programacao a {
+#programacao .dia {
 	padding: 2vh 4vh;
 	color: #000;
 	background-color: #fafafa;
@@ -269,7 +269,7 @@ header nav {
 	font-size: calc(100vh/45);
 }
 
-#programacao a:hover {
+#programacao .dia:hover {
 	background-color: rgba(253, 128, 1, 0.9);
 	transition: 0.5s;
 	-webkit-transition: 0.5s;
