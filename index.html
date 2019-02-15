@@ -955,6 +955,40 @@
 			</div>
 		</div>
 
+		<!-- Modal de aviso sobre os certificados -->
+		<div class="modal fade bd-example-modal-lg" id="certificadosModal" tabindex="-1" role="dialog" aria-labelledby="certificadosModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Certificados</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h4>Caros participantes da ERIPI 2018</h4>
+						<br>
+						<p>Os certificados já se encontram disponíveis para emissão e impressão pelos participantes.
+							Para emitir e imprimir seus certificados, por favor, utilizem o link 
+							<a href="http://leg.ufpi.br/cceno/index/pagina/id/8407" target="_blank">
+								http://leg.ufpi.br/cceno/index/pagina/id/8407
+							</a>
+							 e o número de seu CPF.
+						</p>
+						<br>
+						<p>
+							Qualquer problema, por favor, entre em contato com o coordenador do evento por intermédio do e-mail 
+							<a href="mailto:ivan@ufpi.edu.br">ivan@ufpi.edu.br</a>
+						</p>
+						<br>
+						<p>Atenciosamente,</p>
+						<br>
+						<p>Ivan Saraiva Silva</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 	<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
@@ -976,6 +1010,7 @@
 			$("#canvas").outerHeight($(window).height()-$("canvas").offset().top- Math.abs($("canvas").outerHeight(true) - $("canvas").outerHeight()));
 		}
 		$(document).ready(function() {
+			$('#certificadosModal').modal('show');
 			resize();
 			$(window).on("resize", function() {
 				resize();
